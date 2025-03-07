@@ -1,0 +1,12 @@
+.service-title-container {
+  max-width: 600px;
+}
+
+.service-icon {
+  width: 65px;
+  height: 65px;
+}
+
+.overlapping-image {
+  margin-top: -25%;
+}

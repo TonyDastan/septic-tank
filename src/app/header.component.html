@@ -1,0 +1,25 @@
+import {component, onInit} from '@angular/core';
+
+@Component({
+  selector: 'app-header',
+  template: '
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn">
+    <a routerLink="/" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <h1 class="m-0 text-primary"><i class="fa fa-hard-hat me-3"></i>UzuriSeptic</h1>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <a routerLink="/" class="nav-item nav-link active">Home</a>
+        <a routerLink="/about" class="nav-item nav-link">About</a>
+        <a routerLink="/services" class="nav-item nav-link">Services</a>
+        <a routerLink="/team" class="nav-item nav-link">Our Team</a>
+        <a routerLink="/Location" class="nav-item nav-link">Location</a>
+      </div>
+      <a routerLink="/contact" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">contact us<i class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+  </nav>
+  '
+})
+export class HeaderComponent implements OnInit {
+  title = 'septic-tank-project';
+}
