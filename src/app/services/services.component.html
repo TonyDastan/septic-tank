@@ -1,28 +1,35 @@
+<!-- Loading Overlay -->
+<div class="loading-overlay" [class.fade-out]="!animationState">
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
 <!-- Hero Section -->
-<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/img/tank1.jpg') center/cover no-repeat;">
+<div class="container-fluid page-header py-5 mb-5" [@fadeAnimation]="animationState" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/img/tank1.jpg') center/cover no-repeat;">
     <div class="container text-center py-5">
-        <h1 class="display-3 text-white mb-3 animated slideInDown">Huduma Zetu</h1>
-      <nav aria-label="breadcrumb animated slideInDown">
-            <ol class="breadcrumb text-uppercase justify-content-center mb-0">
+        <h1 class="display-3 text-white mb-3" [@slideInAnimation]="animationState">Huduma Zetu</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb text-uppercase justify-content-center mb-0" [@slideInAnimation]="animationState">
                 <li class="breadcrumb-item"><a class="text-white" routerLink="/">Nyumbani</a></li>
                 <li class="breadcrumb-item text-primary active" aria-current="page">Huduma</li>
-          </ol>
-      </nav>
-  </div>
+            </ol>
+        </nav>
+    </div>
 </div>
 
 <!-- Services Section -->
-<div class="container-xxl py-5">
-  <div class="container">
-        <div class="text-center mb-5">
-            <p class="d-inline-block border rounded-pill py-1 px-4">Huduma Zetu</p>
+<div class="container-xxl py-5" [@fadeAnimation]>
+    <div class="container">
+        <div class="text-center mb-5" [@slideInAnimation]>
+            <span class="badge bg-primary text-white px-4 py-2 mb-3">Huduma Zetu</span>
             <h1 class="display-5">Suluhisho na Usimamizi wa Maji Taka</h1>
             <p class="lead text-muted">Tunatoa huduma kamili za ujenzi na usimamizi wa septic tanks kwa mahitaji yako yote</p>
-      </div>
+        </div>
 
-      <div class="row g-4">
+        <div class="row g-4" [@staggerAnimation]>
             <!-- Service 1 -->
-            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+            <div class="col-lg-4 col-md-6" [@cardAnimation]>
                 <div class="service-item bg-white rounded shadow-lg h-100 p-5">
                     <div class="d-flex align-items-center mb-4">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-primary" style="width: 60px; height: 60px;">
@@ -41,7 +48,7 @@
             </div>
 
             <!-- Service 2 -->
-            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+            <div class="col-lg-4 col-md-6" [@cardAnimation]>
                 <div class="service-item bg-white rounded shadow-lg h-100 p-5">
                     <div class="d-flex align-items-center mb-4">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-primary" style="width: 60px; height: 60px;">
@@ -60,14 +67,14 @@
             </div>
 
             <!-- Service 3 -->
-            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+            <div class="col-lg-4 col-md-6" [@cardAnimation]>
                 <div class="service-item bg-white rounded shadow-lg h-100 p-5">
                     <div class="d-flex align-items-center mb-4">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-primary" style="width: 60px; height: 60px;">
                             <i class="fa fa-comments text-white"></i>
                         </div>
                         <h3 class="ms-3 mb-0">Ushauri na Utafiti</h3>
-                  </div>
+                    </div>
                     <p class="mb-4">Ushauri wa kitaalamu na utafiti wa mahitaji yako kuhakikisha suluhisho bora za usimamizi wa maji taka.</p>
                     <ul class="list-unstyled mb-4">
                         <li><i class="fas fa-check-circle text-primary me-2"></i>Utafiti wa mahitaji</li>
@@ -75,21 +82,21 @@
                         <li><i class="fas fa-check-circle text-primary me-2"></i>Mipango ya ujenzi</li>
                     </ul>
                     <a class="btn btn-primary rounded-pill py-2 px-4" routerLink="/contact">Omba Huduma</a>
-              </div>
-          </div>
-                  </div>
-              </div>
-          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Features Section -->
-<div class="container-fluid bg-light py-5">
+<div class="container-fluid bg-light py-5" [@fadeAnimation]>
     <div class="container">
-        <div class="text-center mb-5">
-            <p class="d-inline-block border rounded-pill py-1 px-4">Huduma Zetu</p>
+        <div class="text-center mb-5" [@slideInAnimation]>
+            <span class="badge bg-primary text-white px-4 py-2 mb-3">Vipengele Vyetu</span>
             <h2 class="display-5">Kwa Nini Kuchagua Huduma Zetu?</h2>
         </div>
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row g-4" [@staggerAnimation]>
+            <div class="col-lg-3 col-md-6">
                 <div class="d-flex align-items-center">
                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-primary" style="width: 55px; height: 55px;">
                         <i class="fa fa-certificate text-white"></i>
@@ -97,10 +104,10 @@
                     <div class="ms-4">
                         <h5 class="mb-1">Uzoefu</h5>
                         <p class="mb-0">Miaka 8+ ya uzoefu</p>
-                  </div>
-              </div>
-          </div>
-            <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
                 <div class="d-flex align-items-center">
                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-primary" style="width: 55px; height: 55px;">
                         <i class="fa fa-users text-white"></i>
@@ -108,10 +115,10 @@
                     <div class="ms-4">
                         <h5 class="mb-1">Wataalam</h5>
                         <p class="mb-0">Timu ya wataalam wenye leseni</p>
-                  </div>
-              </div>
-          </div>
-            <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
                 <div class="d-flex align-items-center">
                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-primary" style="width: 55px; height: 55px;">
                         <i class="fa fa-clock text-white"></i>
@@ -119,10 +126,10 @@
                     <div class="ms-4">
                         <h5 class="mb-1">Haraka</h5>
                         <p class="mb-0">Huduma za haraka na ufanisi</p>
-                  </div>
-              </div>
-          </div>
-            <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
                 <div class="d-flex align-items-center">
                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-primary" style="width: 55px; height: 55px;">
                         <i class="fa fa-hand-holding-usd text-white"></i>
@@ -130,17 +137,17 @@
                     <div class="ms-4">
                         <h5 class="mb-1">Bei Nzuri</h5>
                         <p class="mb-0">Bei nafuu na thamani ya pesa</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Call to Action -->
-<div class="container-xxl py-5 text-center">
+<div class="container-xxl py-5 text-center" [@fadeAnimation]>
     <div class="container">
-        <div class="bg-primary rounded p-5">
+        <div class="bg-primary rounded p-5" [@slideInAnimation]>
             <h2 class="text-white mb-4">Unahitaji Huduma Zetu?</h2>
             <p class="text-white lead mb-4">Wasiliana nasi leo kwa ushauri na huduma bora za usimamizi wa maji taka.</p>
             <a class="btn btn-light rounded-pill py-3 px-5" routerLink="/contact">

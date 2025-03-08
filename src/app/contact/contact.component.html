@@ -1,106 +1,117 @@
-  <!-- Topbar Start -->
-  <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
-    <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-            <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                <small>Kigamboni-Ferry, Dar es Salaam, TANZANIA</small>
+<!-- Loading Overlay -->
+<div class="loading-overlay" [class.fade-out]="!animationState">
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="container-fluid page-header py-5 mb-5" [@fadeAnimation]="animationState" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/img/tank1.jpg') center/cover no-repeat;">
+    <div class="container text-center py-5">
+        <h1 class="display-3 text-white mb-3" [@slideInAnimation]="animationState">Wasiliana Nasi</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb text-uppercase justify-content-center mb-0" [@slideInAnimation]="animationState">
+                <li class="breadcrumb-item"><a class="text-white" routerLink="/">Nyumbani</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">Wasiliana Nasi</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<!-- Contact Info -->
+<div class="container-xxl py-5" [@fadeAnimation]="animationState">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 animated-item">
+                <div class="bg-light rounded p-4 hover-lift">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-primary pulse-on-hover" style="width: 50px; height: 50px;">
+                            <i class="fa fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="mb-0">Ofisi Yetu</h5>
+                            <p class="mb-0">{{contactInfo.address}}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="h-100 d-inline-flex align-items-center py-3">
-                <small class="far fa-clock text-primary me-2"></small>
-                <small>Mon - Sat : 08.00 AM - 05.00 PM</small>
+            <div class="col-lg-4 col-md-6 animated-item">
+                <div class="bg-light rounded p-4 hover-lift">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-primary pulse-on-hover" style="width: 50px; height: 50px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="mb-0">Piga Simu</h5>
+                            <p class="mb-0">{{contactInfo.phone}}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-5 px-5 text-end">
-            <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                <small class="fa fa-phone-alt text-primary me-2"></small>
-                <small>+255 747 143 139</small>
-            </div>
-            <div class="h-100 d-inline-flex align-items-center">
-                <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href="https://www.instagram.com/monacoseptic/"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href=""><i class="fab fa-whatsapp"></i></a>
+            <div class="col-lg-4 col-md-6 animated-item">
+                <div class="bg-light rounded p-4 hover-lift">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-primary pulse-on-hover" style="width: 50px; height: 50px;">
+                            <i class="fa fa-envelope text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="mb-0">Barua Pepe</h5>
+                            <p class="mb-0">{{contactInfo.email}}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Topbar End -->
 
-<!-- Contact Start -->
-<div class="container-xxl py-5">
-  <div class="container">
-      <div class="row g-4">
-          <div class="col-lg-4">
-              <div class="h-100 bg-light rounded d-flex align-items-center p-5">
-                  <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
-                      <i class="fa fa-map-marker-alt text-primary"></i>
-                  </div>
-                  <div class="ms-4">
-                      <p class="mb-2">Address</p>
-                      <h5 class="mb-0">Kigamboni-Ferry, Dar es Salaam, TANZANIA</h5>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4">
-              <div class="h-100 bg-light rounded d-flex align-items-center p-5">
-                  <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
-                      <i class="fa fa-phone-alt text-primary"></i>
-                  </div>
-                  <div class="ms-4">
-                      <p class="mb-2">Call Us Now</p>
-                      <h5 class="mb-0">+255 747 143 139</h5>
-                  </div>
-              </div>
-          </div>
-        
-         
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="bg-light rounded p-5">
-                  <p class="d-inline-block border rounded-pill py-1 px-4">Contact Us</p>
-                  <h1 class="mb-4">Have Any Query? Please Contact Us!</h1>
-                  <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.</p>
-                  <form>
-                      <div class="row g-3">
-                          <div class="col-md-6">
-                              <div class="form-floating">
-                                  <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                  <label for="name">Your Name</label>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="form-floating">
-                                  <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                  <label for="email">Your Email</label>
-                              </div>
-                          </div>
-                          <div class="col-12">
-                              <div class="form-floating">
-                                  <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                  <label for="subject">Subject</label>
-                              </div>
-                          </div>
-                          <div class="col-12">
-                              <div class="form-floating">
-                                  <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                  <label for="message">Message</label>
-                              </div>
-                          </div>
-                          <div class="col-12">
-                              <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                          </div>
-                      </div>
-                  </form>
-              </div>
-          </div>
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              <div class="h-100" style="min-height: 400px;">
-                  <iframe class="rounded w-100 h-100"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.747113241125!2d39.31144921475381!3d-6.816546995229328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cbaa9d1d9a62f%3A0x8c8d3c4d9d9d9d9d!2sMachava%2C%20Kigamboni%2C%20Dar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2stz!4v1720000000000!5m2!1sen!2stz"
-                  frameborder="0" allowfullscreen="" aria-hidden="false"
-                  tabindex="0"></iframe>
-              </div>
-          </div>
-      </div>
-  </div>
+<!-- Contact Form -->
+<div class="container-xxl py-5" [@fadeAnimation]="animationState">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 animated-item" [@slideInAnimation]="animationState">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Wasiliana Nasi</p>
+                <h1 class="mb-4">Una Swali? Tuma Ujumbe</h1>
+                <form (ngSubmit)="onSubmit()">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Jina Lako" [(ngModel)]="formData.name" name="name">
+                                <label for="name">Jina Lako</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Barua Pepe" [(ngModel)]="formData.email" name="email">
+                                <label for="email">Barua Pepe</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="subject" placeholder="Somo" [(ngModel)]="formData.subject" name="subject">
+                                <label for="subject">Somo</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Ujumbe" id="message" style="height: 150px" [(ngModel)]="formData.message" name="message"></textarea>
+                                <label for="message">Ujumbe</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3 animated-btn" type="submit">Tuma Ujumbe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 animated-item" [@slideInAnimation]="animationState">
+                <div class="h-100">
+                    <iframe class="rounded w-100 h-100" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63499.5759094865!2d39.24243135!3d-6.8162672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b03a3c3c8ab%3A0x57df0c7fdc6d3cf0!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2s!4v1635835853001!5m2!1sen!2s" 
+                        style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- Contact End -->

@@ -1,15 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { fadeAnimation, slideInAnimation, staggerAnimation, cardAnimation } from '../shared/animations';
 
 @Component({
   selector: 'app-services',
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './services.component.html',
-  styleUrls: ['./services.component.css']
+  styleUrls: ['./services.component.css'],
+  animations: [fadeAnimation, slideInAnimation, staggerAnimation, cardAnimation]
 })
-export class ServicesComponent {
+export class ServicesComponent implements OnInit {
+  animationState = true;
+
   services = [
     {
       title: 'System Design',
@@ -53,6 +58,10 @@ export class ServicesComponent {
   constructor() { }
 
   ngOnInit(): void {
+    // Trigger animations on init
+    setTimeout(() => {
+      this.animationState = false;
+    }, 100);
   }
 }
 
