@@ -18,6 +18,179 @@
     </div>
 </div>
 
+<!-- Company Description Section -->
+<div class="container-xxl py-5" [@fadeAnimation]="animationState">
+    <div class="container">
+        <!-- Main Company Info -->
+        <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+            <h1 class="display-4 mb-4">UZURI SEPTIC TANKS</h1>
+            <div class="divider-custom">
+                <div class="line"></div>
+                <div class="icon"><i class="fa fa-star text-primary"></i></div>
+                <div class="line"></div>
+            </div>
+            <p class="lead text-muted mb-0">Tunatoa huduma ya ujenzi wa mashimo ya vyoo vya kisasa ambayo ni bora na salama kwa matumizi ya kila Mtanzania.</p>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="row g-4 mb-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="bg-white rounded shadow-lg p-4 text-center hover-lift">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle mb-3" style="width: 65px; height: 65px;">
+                        <i class="fa fa-calendar-alt text-white fs-4"></i>
+                    </div>
+                    <h2 class="mb-1">8+</h2>
+                    <p class="text-muted mb-0">Miaka ya Uzoefu</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="bg-white rounded shadow-lg p-4 text-center hover-lift">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle mb-3" style="width: 65px; height: 65px;">
+                        <i class="fa fa-check-circle text-white fs-4"></i>
+                    </div>
+                    <h2 class="mb-1">212+</h2>
+                    <p class="text-muted mb-0">Miradi Iliyokamilika</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="bg-white rounded shadow-lg p-4 text-center hover-lift">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle mb-3" style="width: 65px; height: 65px;">
+                        <i class="fa fa-users text-white fs-4"></i>
+                    </div>
+                    <h2 class="mb-1">100%</h2>
+                    <p class="text-muted mb-0">Wateja Walioridhika</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="bg-white rounded shadow-lg p-4 text-center hover-lift">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle mb-3" style="width: 65px; height: 65px;">
+                        <i class="fa fa-medal text-white fs-4"></i>
+                    </div>
+                    <h2 class="mb-1">5⭐</h2>
+                    <p class="text-muted mb-0">Ubora wa Huduma</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services & Pricing Section -->
+        <div class="service-pricing-section py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 mb-3">Huduma Zetu za Kisasa</h2>
+                <div class="divider-custom">
+                    <div class="line"></div>
+                    <div class="icon"><i class="fa fa-tools text-primary"></i></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Left Service Card -->
+                <div class="col-lg-6" [@slideInAnimation]="animationState">
+                    <div class="service-card h-100 bg-white rounded-lg shadow-lg p-4 position-relative overflow-hidden hover-lift">
+                        <div class="service-badge position-absolute">Maarufu</div>
+                        <div class="text-center mb-4">
+                            <div class="service-icon-wrapper mb-3">
+                                <i class="fas fa-home text-primary"></i>
+                            </div>
+                            <h3 class="mb-2">Septic Tank</h3>
+                            <p class="text-muted mb-3">Shimo Moja - Suluhisho Bora</p>
+                            <div class="price-tag">
+                                <span class="currency">TSH</span>
+                                <span class="amount">750,000</span>
+                                <span class="duration">/=</span>
+                            </div>
+                        </div>
+                        <div class="service-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>Vifaa vyote vya ujenzi</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>Ufundi wa kitaalamu</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>Hakikisho la ubora</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>Ushauri wa kitaalamu</span>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a routerLink="/contact" class="btn btn-primary rounded-pill py-3 px-5 animated-btn">
+                                <i class="fas fa-phone-alt me-2"></i>Agiza Sasa
+                            </a>
+                        </div>
+                        <div class="service-shape"></div>
+                    </div>
+                </div>
+
+                <!-- Right Service Card -->
+                <div class="col-lg-6" [@slideInAnimation]="animationState">
+                    <div class="service-card h-100 bg-gradient-primary text-white rounded-lg shadow-lg p-4 position-relative overflow-hidden hover-lift">
+                        <div class="service-badge position-absolute bg-warning">Premium</div>
+                        <div class="text-center mb-4">
+                            <div class="service-icon-wrapper mb-3 bg-white">
+                                <i class="fas fa-building text-primary"></i>
+                            </div>
+                            <h3 class="mb-2">Biodigester System</h3>
+                            <p class="text-light mb-3">Mashimo Mawili - Suluhisho la Kisasa</p>
+                            <div class="price-tag">
+                                <span class="currency">TSH</span>
+                                <span class="amount">1,200,000</span>
+                                <span class="duration">/=</span>
+                            </div>
+                        </div>
+                        <div class="service-features">
+                            <div class="feature-item text-white">
+                                <i class="fas fa-check-circle text-warning me-2"></i>
+                                <span>Vifaa vya hali ya juu</span>
+                            </div>
+                            <div class="feature-item text-white">
+                                <i class="fas fa-check-circle text-warning me-2"></i>
+                                <span>Wataalam wenye uzoefu</span>
+                            </div>
+                            <div class="feature-item text-white">
+                                <i class="fas fa-check-circle text-warning me-2"></i>
+                                <span>Teknolojia ya kisasa</span>
+                            </div>
+                            <div class="feature-item text-white">
+                                <i class="fas fa-check-circle text-warning me-2"></i>
+                                <span>Huduma ya ufuatiliaji</span>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a routerLink="/contact" class="btn btn-light rounded-pill py-3 px-5 animated-btn">
+                                <i class="fas fa-phone-alt me-2"></i>Agiza Sasa
+                            </a>
+                        </div>
+                        <div class="service-shape"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="bg-light rounded-lg p-4 border-start border-primary border-5">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-info-circle text-primary fs-1 me-3"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="mb-2">Taarifa Muhimu</h4>
+                                <p class="mb-0">Bei zote zinajumuisha vifaa na ufundi. Bei hizi ni kwa wakazi wa Dar es Salaam. Tunahudumia pia mikoa mingine kwa makubaliano maalum. Wasiliana nasi kwa maelezo zaidi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- About Section -->
 <div class="container-xxl py-5" [@fadeAnimation]="animationState">
     <div class="container">
@@ -33,35 +206,48 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6" [@slideInAnimation]="animationState">
-                <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
-                <h1 class="mb-4">Tunajenga Mustakabali Endelevu wa Usimamizi wa Maji Taka</h1>
-                <p class="lead text-muted">Sisi ni kampuni inayoongoza katika ujenzi wa septic tanks, tukizingatia uimara, usalama, na urafiki wa mazingira kwa makazi na biashara.</p>
-                
-                <div class="row g-4 mt-4" [@staggerAnimation]>
-                    <div class="col-6">
-                        <div class="d-flex align-items-center animated-item">
-                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light pulse-on-hover" style="width: 55px; height: 55px;">
-                                <i class="fa fa-check text-primary"></i>
-                            </div>
-                            <div class="ms-4">
-                                <h5 class="mb-1">Ubora wa Hali ya Juu</h5>
-                                <p class="mb-0">Ujenzi wa kisasa na uimara</p>
-                            </div>
+            <div class="col-lg-6 wow fadeIn" [@slideInAnimation]="animationState">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Faida Zetu</p>
+                <h1 class="mb-4">Sifa za Vyoo Vyetu vya Kisasa</h1>
+                <div class="features-list">
+                    <div class="feature-item d-flex align-items-center mb-3 animated-item">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light pulse-on-hover" style="width: 45px; height: 45px;">
+                            <i class="fa fa-check text-primary"></i>
                         </div>
+                        <p class="ms-3 mb-0">Hutumia eneo dogo vikijengwa</p>
                     </div>
-                    <div class="col-6">
-                        <div class="d-flex align-items-center animated-item">
-                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light pulse-on-hover" style="width: 55px; height: 55px;">
-                                <i class="fa fa-shield-alt text-primary"></i>
-                            </div>
-                            <div class="ms-4">
-                                <h5 class="mb-1">Usalama wa Mazingira</h5>
-                                <p class="mb-0">Urafiki na mazingira</p>
-                            </div>
+                    <div class="feature-item d-flex align-items-center mb-3 animated-item">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light pulse-on-hover" style="width: 45px; height: 45px;">
+                            <i class="fa fa-check text-primary"></i>
                         </div>
+                        <p class="ms-3 mb-0">Si rahisi kujaa hata kama eneo lina changamoto ya maji</p>
+                    </div>
+                    <div class="feature-item d-flex align-items-center mb-3 animated-item">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light pulse-on-hover" style="width: 45px; height: 45px;">
+                            <i class="fa fa-check text-primary"></i>
+                        </div>
+                        <p class="ms-3 mb-0">Havitoi harufu yoyote ile</p>
+                    </div>
+                    <div class="feature-item d-flex align-items-center mb-3 animated-item">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light pulse-on-hover" style="width: 45px; height: 45px;">
+                            <i class="fa fa-check text-primary"></i>
+                        </div>
+                        <p class="ms-3 mb-0">Hutumia garama ndogo na nafuu</p>
+                    </div>
+                    <div class="feature-item d-flex align-items-center mb-3 animated-item">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light pulse-on-hover" style="width: 45px; height: 45px;">
+                            <i class="fa fa-check text-primary"></i>
+                        </div>
+                        <p class="ms-3 mb-0">Vinafaa kwa matumizi ya kanisani, msikitini, shuleni, hospitalini na majumbani n.k</p>
+                    </div>
+                    <div class="feature-item d-flex align-items-center mb-3 animated-item">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light pulse-on-hover" style="width: 45px; height: 45px;">
+                            <i class="fa fa-check text-primary"></i>
+                        </div>
+                        <p class="ms-3 mb-0">Vinafaa ardhi yoyote yenye asili ya maji, mfinyanzi n.k</p>
                     </div>
                 </div>
+                <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" routerLink="/services">Angalia Bei Zetu</a>
             </div>
         </div>
     </div>
@@ -87,9 +273,9 @@
                     <div class="d-flex align-items-center mb-4">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-primary pulse-on-hover" style="width: 60px; height: 60px;">
                             <i class="fa fa-eye text-white"></i>
-                        </div>
+                </div>
                         <h3 class="ms-3 mb-0">Maono Yetu</h3>
-                    </div>
+            </div>
                     <p class="mb-0">Kuwa kinara wa teknolojia ya usimamizi wa maji taka kwa ubunifu na uendelevu. Tunataka kuwa chaguo la kwanza kwa wateja wote wanaohitaji suluhisho za usimamizi wa maji taka.</p>
                 </div>
             </div>
@@ -104,8 +290,180 @@
             <h2 class="text-white mb-4">Unahitaji Huduma Zetu?</h2>
             <p class="text-white lead mb-4">Wasiliana nasi leo kwa ushauri na huduma bora za usimamizi wa maji taka.</p>
             <a class="btn btn-light rounded-pill py-3 px-5 animated-btn" routerLink="/contact">
-                <i class="fas fa-envelope me-2"></i> Wasiliana Nasi
-            </a>
+            <i class="fas fa-envelope me-2"></i> Wasiliana Nasi
+        </a>
         </div>
     </div>
 </div>
+
+<style>
+.divider-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.divider-custom .line {
+    height: 2px;
+    width: 100px;
+    background-color: var(--bs-primary);
+    margin: 0 1rem;
+}
+
+.divider-custom .icon {
+    font-size: 1.5rem;
+}
+
+.line-height-1 {
+    line-height: 60px;
+}
+
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+.pulse-on-hover {
+    animation: pulse 2s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.service-pricing-section {
+    position: relative;
+    z-index: 1;
+}
+
+.service-card {
+    border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--bs-primary) 0%, #2980b9 100%);
+}
+
+.service-badge {
+    top: 20px;
+    right: -35px;
+    padding: 8px 40px;
+    background: var(--bs-primary);
+    color: white;
+    transform: rotate(45deg);
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.service-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(var(--bs-primary-rgb), 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.service-icon-wrapper i {
+    font-size: 2rem;
+}
+
+.price-tag {
+    margin: 1.5rem 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.price-tag .currency {
+    font-size: 1.2rem;
+    font-weight: 500;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.price-tag .amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.price-tag .duration {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.service-features {
+    margin: 2rem 0;
+}
+
+.feature-item {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+.service-shape {
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.animated-btn {
+    position: relative;
+    overflow: hidden;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+.animated-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.animated-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.animated-btn:hover::after {
+    width: 300px;
+    height: 300px;
+}
+</style>
