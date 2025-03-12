@@ -5,6 +5,34 @@
     </div>
 </div>
 
+   <!-- Topbar Start -->
+   <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s" [@fadeAnimation]="animationState">
+    <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+            <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                <small>Kigamboni-Ferry, Dar es Salaam, TANZANIA</small>
+            </div>
+            <div class="h-100 d-inline-flex align-items-center py-3">
+                <small class="far fa-clock text-primary me-2"></small>
+                <small>Mon - Sat : 08.00 AM - 05.00 PM</small>
+            </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end">
+            <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                <small class="fa fa-phone-alt text-primary me-2"></small>
+                <small>+255 747 143 139</small>
+            </div>
+            <div class="h-100 d-inline-flex align-items-center">
+                <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href="https://www.instagram.com/monacoseptic/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href="https://wa.me/255747143139" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
 <!-- Hero Section -->
 <div class="container-fluid page-header py-5 mb-5" [@fadeAnimation]="animationState" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/img/tank1.jpg') center/cover no-repeat;">
     <div class="container text-center py-5">
@@ -31,9 +59,9 @@
                         <div class="ms-3">
                             <h5 class="mb-0">Ofisi Yetu</h5>
                             <p class="mb-0">{{contactInfo.address}}</p>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            </div>
+        </div>
             </div>
             <div class="col-lg-4 col-md-6 animated-item">
                 <div class="bg-light rounded p-4 hover-lift">
@@ -44,27 +72,27 @@
                         <div class="ms-3">
                             <h5 class="mb-0">Piga Simu</h5>
                             <p class="mb-0">{{contactInfo.phone}}</p>
-                        </div>
-                    </div>
-                </div>
             </div>
+        </div>
+    </div>
+</div>
             <div class="col-lg-4 col-md-6 animated-item">
                 <div class="bg-light rounded p-4 hover-lift">
                     <div class="d-flex align-items-center mb-4">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-primary pulse-on-hover" style="width: 50px; height: 50px;">
                             <i class="fa fa-envelope text-white"></i>
-                        </div>
+                  </div>
                         <div class="ms-3">
                             <h5 class="mb-0">Barua Pepe</h5>
                             <p class="mb-0">{{contactInfo.email}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+                  </div>
+              </div>
+          </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+        
 <!-- Contact Form -->
 <div class="container-xxl py-5" [@fadeAnimation]="animationState">
     <div class="container">
@@ -73,45 +101,45 @@
                 <p class="d-inline-block border rounded-pill py-1 px-4">Wasiliana Nasi</p>
                 <h1 class="mb-4">Una Swali? Tuma Ujumbe</h1>
                 <form (ngSubmit)="onSubmit()">
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="form-floating">
+                      <div class="row g-3">
+                          <div class="col-md-6">
+                              <div class="form-floating">
                                 <input type="text" class="form-control" id="name" placeholder="Jina Lako" [(ngModel)]="formData.name" name="name">
                                 <label for="name">Jina Lako</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-floating">
                                 <input type="email" class="form-control" id="email" placeholder="Barua Pepe" [(ngModel)]="formData.email" name="email">
                                 <label for="email">Barua Pepe</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
+                              </div>
+                          </div>
+                          <div class="col-12">
+                              <div class="form-floating">
                                 <input type="text" class="form-control" id="subject" placeholder="Somo" [(ngModel)]="formData.subject" name="subject">
                                 <label for="subject">Somo</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
+                              </div>
+                          </div>
+                          <div class="col-12">
+                              <div class="form-floating">
                                 <textarea class="form-control" placeholder="Ujumbe" id="message" style="height: 150px" [(ngModel)]="formData.message" name="message"></textarea>
                                 <label for="message">Ujumbe</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
+                              </div>
+                          </div>
+                          <div class="col-12">
                             <button class="btn btn-primary w-100 py-3 animated-btn" type="submit">Tuma Ujumbe</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
             <div class="col-lg-6 animated-item" [@slideInAnimation]="animationState">
                 <div class="h-100">
-                    <iframe class="rounded w-100 h-100" 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63499.5759094865!2d39.24243135!3d-6.8162672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b03a3c3c8ab%3A0x57df0c7fdc6d3cf0!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2s!4v1635835853001!5m2!1sen!2s" 
+                  <iframe class="rounded w-100 h-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.746716058743!2d39.30913831475385!3d-6.821016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNDknMTUuNyJTIDM5wrAxOCc0MC44IkU!5e0!3m2!1ssw!2stz!4v1720000000000!5m2!1ssw!2stz"
                         style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
-                </div>
-            </div>
-        </div>
-    </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>

@@ -16,9 +16,9 @@ export class ContactComponent implements OnInit {
   animationState = true;
 
   contactInfo = {
-    address: 'Dar es Salaam, Tanzania',
+    address: 'Kigamboni-Ferry, Dar es Salaam',
     phone: '+255 123 456 789',
-    email: 'info@uzuriseptictanks.co.tz',
+    email: 'info@monacoseptictanks.co.tz',
     workingHours: 'Jumatatu - Jumamosi: 9:00 - 17:00'
   };
 

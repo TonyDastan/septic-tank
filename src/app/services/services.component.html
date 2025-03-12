@@ -31,11 +31,12 @@
             </div>
             <p class="lead text-muted">Tunatoa huduma bora za ujenzi wa vyoo vya kisasa kwa gharama nafuu</p>
         </div>
+        
 
         <!-- Services Grid -->
-        <div class="row g-4">
+        <div class="row g-5">
             <!-- Service Card 1 -->
-            <div class="col-lg-4 col-md-6" [@slideInAnimation]="animationState">
+            <div class="col-lg-6 col-md-6" [@slideInAnimation]="animationState">
                 <div class="service-box text-center h-100 p-4 hover-lift">
                     <div class="service-icon-box mb-4">
                         <i class="fas fa-home service-icon"></i>
@@ -46,14 +47,35 @@
                         <span class="price-value">TSH 750,000/=</span>
                         <span class="price-period">Gharama Yote</span>
                     </div>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Vifaa vyote vya ujenzi</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Ufundi wa kitaalamu</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Hakikisho la ubora</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Ushauri wa kitaalamu</span>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
                     <a class="btn btn-outline-primary rounded-pill py-2 px-4 animated-btn" routerLink="/contact">
                         <i class="fas fa-phone-alt me-2"></i>Wasiliana Nasi
                     </a>
+                    </div>
+                    <div class="service-shape"></div>
                 </div>
             </div>
 
             <!-- Service Card 2 -->
-            <div class="col-lg-4 col-md-6" [@slideInAnimation]="animationState">
+            <div class="col-lg-6 col-md-6" [@slideInAnimation]="animationState">
                 <div class="service-box text-center h-100 p-4 hover-lift featured">
                     <div class="featured-badge">Maarufu</div>
                     <div class="service-icon-box mb-4">
@@ -65,32 +87,53 @@
                         <span class="price-value">TSH 1,200,000/=</span>
                         <span class="price-period">Gharama Yote</span>
                     </div>
+                    <div class="service-features">
+                        <div class="feature-item text-white">
+                            <i class="fas fa-check-circle text-warning me-2"></i>
+                            <span>Vifaa vya hali ya juu</span>
+                        </div>
+                        <div class="feature-item text-white">
+                            <i class="fas fa-check-circle text-warning me-2"></i>
+                            <span>Wataalam wenye uzoefu</span>
+                        </div>
+                        <div class="feature-item text-white">
+                            <i class="fas fa-check-circle text-warning me-2"></i>
+                            <span>Teknolojia ya kisasa</span>
+                        </div>
+                        <div class="feature-item text-white">
+                            <i class="fas fa-check-circle text-warning me-2"></i>
+                            <span>Huduma ya ufuatiliaji</span>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
                     <a class="btn btn-primary rounded-pill py-2 px-4 animated-btn" routerLink="/contact">
                         <i class="fas fa-phone-alt me-2"></i>Wasiliana Nasi
                     </a>
+                    </div>
+                    <div class="service-shape"></div>
                 </div>
             </div>
-
-            <!-- Service Card 3 -->
-            <div class="col-lg-4 col-md-6" [@slideInAnimation]="animationState">
-                <div class="service-box text-center h-100 p-4 hover-lift">
-                    <div class="service-icon-box mb-4">
-                        <i class="fas fa-tools service-icon"></i>
+        </div>
+           <!-- Additional Info -->
+           <div class="row mt-5">
+            <div class="col-12">
+                <div class="bg-light rounded-lg p-4 border-start border-primary border-5">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-info-circle text-primary fs-1 me-3"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h4 class="mb-2">Taarifa Muhimu</h4>
+                            <p class="mb-0">Bei zote zinajumuisha vifaa na ufundi. Bei hizi ni kwa wakazi wa Dar es Salaam. Tunahudumia pia mikoa mingine kwa makubaliano maalum. Wasiliana nasi kwa maelezo zaidi.</p>
+                        </div>
                     </div>
-                    <h3 class="mb-3">Matengenezo</h3>
-                    <p class="mb-4">Huduma za matengenezo na ukarabati wa vyoo vya zamani</p>
-                    <div class="service-price mb-4">
-                        <span class="price-value">Bei Nafuu</span>
-                        <span class="price-period">Kulingana na Kazi</span>
-                    </div>
-                    <a class="btn btn-outline-primary rounded-pill py-2 px-4 animated-btn" routerLink="/contact">
-                        <i class="fas fa-phone-alt me-2"></i>Wasiliana Nasi
-                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 <!-- Vipengele Vyetu Section -->
 <div class="container-xxl py-5 bg-light" [@fadeAnimation]="animationState">
@@ -247,79 +290,6 @@
     </div>
 </div>
 
-<!-- Testimonials Section -->
-<div class="container-xxl py-5 bg-light" [@fadeAnimation]="animationState">
-    <div class="container">
-        <div class="text-center mx-auto mb-5" style="max-width: 800px;">
-            <h1 class="display-4 mb-4">Wateja Wetu Wanasema</h1>
-            <div class="divider-custom">
-                <div class="line"></div>
-                <div class="icon"><i class="fa fa-quote-left text-primary"></i></div>
-                <div class="line"></div>
-            </div>
-        </div>
-
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6" [@slideInAnimation]="animationState">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="testimonial-text">
-                            <i class="fa fa-quote-left text-primary mb-3"></i>
-                            <p>"Huduma nzuri sana, wafanyakazi wenye ujuzi na bei nafuu. Wamejenga septic tank yangu kwa ubora wa hali ya juu."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="testimonial-author-img">
-                                <i class="fas fa-user-circle"></i>
-                            </div>
-                            <div class="testimonial-author-info">
-                                <h5 class="mb-1">Juma Hassan</h5>
-                                <p class="mb-0">Kigamboni, Dar es Salaam</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6" [@slideInAnimation]="animationState">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="testimonial-text">
-                            <i class="fa fa-quote-left text-primary mb-3"></i>
-                            <p>"Nimejenga nao mara mbili na kazi yao ni nzuri sana. Wanafanya kazi kwa weledi na kwa wakati."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="testimonial-author-img">
-                                <i class="fas fa-user-circle"></i>
-                            </div>
-                            <div class="testimonial-author-info">
-                                <h5 class="mb-1">Maria John</h5>
-                                <p class="mb-0">Mbezi, Dar es Salaam</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6" [@slideInAnimation]="animationState">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="testimonial-text">
-                            <i class="fa fa-quote-left text-primary mb-3"></i>
-                            <p>"Wamejenga septic tank ya shule yetu kwa ubora. Hakuna harufu na haijapata matatizo yoyote."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="testimonial-author-img">
-                                <i class="fas fa-user-circle"></i>
-                            </div>
-                            <div class="testimonial-author-info">
-                                <h5 class="mb-1">Peter Masawe</h5>
-                                <p class="mb-0">Mkuranga, Pwani</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- FAQ Section -->
 <div class="container-xxl py-5" [@fadeAnimation]="animationState">
@@ -390,76 +360,26 @@
   </div>
 </div>
 
-<!-- Call to Action -->
-<div class="container-xxl py-5 text-center" [@fadeAnimation]>
-    <div class="container">
-        <div class="bg-primary rounded p-5" [@slideInAnimation]>
-            <h2 class="text-white mb-4">Unahitaji Huduma Zetu?</h2>
-            <p class="text-white lead mb-4">Wasiliana nasi leo kwa ushauri na huduma bora za usimamizi wa maji taka.</p>
-            <a class="btn btn-light rounded-pill py-3 px-5" routerLink="/contact">
-                <i class="fas fa-phone-volume me-2"></i> Wasiliana Nasi
-            </a>
+      <!-- Special Offer -->
+      <div class="row mt-5">
+        <div class="col-12">
+            <div class="bg-primary rounded p-4 text-center position-relative overflow-hidden">
+                <div class="position-relative">
+                    <h3 class="text-white mb-3">OFA MAALUM!</h3>
+                    <p class="text-white mb-0">Bei hizi ni kwa wakazi wa Dar es Salaam. Tunahudumia pia mikoa mingine kwa makubaliano maalum.</p>
+                </div>
+                <div class="position-absolute top-50 start-0 translate-middle-y">
+                    <i class="fa fa-gift text-white opacity-25" style="font-size: 5rem;"></i>
+                </div>
+                <div class="position-absolute top-50 end-0 translate-middle-y">
+                    <i class="fa fa-tag text-white opacity-25" style="font-size: 5rem;"></i>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Pricing Section -->
-<div class="container-xxl py-5" [@fadeAnimation]="animationState">
-    <div class="container">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <p class="d-inline-block border rounded-pill py-1 px-4">Bei Zetu</p>
-            <h1 class="display-6 mb-4">Gharama za Huduma</h1>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-6 wow fadeInUp" [@slideInAnimation]="animationState">
-                <div class="price-item bg-light rounded h-100 p-5 position-relative overflow-hidden">
-                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center position-absolute" style="width: 60px; height: 60px; top: -30px; right: -30px;">
-                        <i class="fa fa-star text-white fs-5"></i>
-                    </div>
-                    <div class="mb-4">
-                        <h4 class="mb-3">Mfumo wa Shimo Moja</h4>
-                        <h3 class="mb-3">TSH 750,000/=</h3>
-                        <p class="text-primary mb-0">Septic Tank</p>
-                    </div>
-                    <p class="text-body mb-4">Gharama zote za vifaa na ufundi ni ndani ya bei tajwa</p>
-                    <a class="btn btn-outline-primary px-4 py-2 rounded-pill" routerLink="/contact">Wasiliana Nasi</a>
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeInUp" [@slideInAnimation]="animationState">
-                <div class="price-item bg-light rounded h-100 p-5 position-relative overflow-hidden">
-                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center position-absolute" style="width: 60px; height: 60px; top: -30px; right: -30px;">
-                        <i class="fa fa-star text-white fs-5"></i>
-                    </div>
-                    <div class="mb-4">
-                        <h4 class="mb-3">Mfumo wa Mashimo Mawili</h4>
-                        <h3 class="mb-3">TSH 1,200,000/=</h3>
-                        <p class="text-primary mb-0">Biodigester System</p>
-                    </div>
-                    <p class="text-body mb-4">Gharama zote za vifaa na ufundi ni ndani ya bei tajwa</p>
-                    <a class="btn btn-outline-primary px-4 py-2 rounded-pill" routerLink="/contact">Wasiliana Nasi</a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Special Offer -->
-        <div class="row mt-5">
-            <div class="col-12">
-                <div class="bg-primary rounded p-4 text-center position-relative overflow-hidden">
-                    <div class="position-relative">
-                        <h3 class="text-white mb-3">OFA MAALUM!</h3>
-                        <p class="text-white mb-0">Bei hizi ni kwa wakazi wa Dar es Salaam. Tunahudumia pia mikoa mingine kwa makubaliano maalum.</p>
-                    </div>
-                    <div class="position-absolute top-50 start-0 translate-middle-y">
-                        <i class="fa fa-gift text-white opacity-25" style="font-size: 5rem;"></i>
-                    </div>
-                    <div class="position-absolute top-50 end-0 translate-middle-y">
-                        <i class="fa fa-tag text-white opacity-25" style="font-size: 5rem;"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 <style>
 /* Service Boxes Styles */
@@ -729,5 +649,31 @@
 .faq-answer p {
     color: #6c757d;
     margin-bottom: 0;
+}
+
+.service-features {
+    margin: 2rem 0;
+}
+
+.feature-item {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+.service-shape {
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: -1;
 }
 </style>

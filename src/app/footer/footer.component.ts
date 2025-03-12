@@ -10,4 +10,11 @@ import { RouterModule } from '@angular/router';
 })
 export class FooterComponent {
 
+  contactInfo = {
+    address: 'Kigamboni-Ferry, Dar es Salaam',
+    phone: '+255 123 456 789',
+    email: 'info@monacoseptictanks.co.tz',
+    workingHours: 'Jumatatu - Jumamosi: 9:00 - 17:00'
+  };
+
 }
