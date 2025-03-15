@@ -17,7 +17,7 @@ export class ContactComponent implements OnInit {
 
   contactInfo = {
     address: 'Kigamboni-Ferry, Dar es Salaam',
-    phone: '+255 123 456 789',
+    phone: '+255 747 143 139',
     email: 'info@monacoseptictanks.co.tz',
     workingHours: 'Jumatatu - Jumamosi: 9:00 - 17:00'
   };
